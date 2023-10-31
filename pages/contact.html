@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__navbar">
+        <ul class="main-header__navbar--items">
+          <li class="main-header__navbar--item">
+            <a href="#" class="hamburger-menu">
+              <span class="hamburger-menu-bar"></span>
+              <span class="hamburger-menu-bar"></span>
+              <span class="hamburger-menu-bar"></span>
+            </a>
+          </li>
+          <li class="main-header__navbar--item">
+            <h1 class="main-header__logo"><a href="../index.html">humil</a></h1>
+          </li>
+          <li class="main-header__navbar--item"><img class="shopping-bag" src="../assets/icons/blk/shopping-bag.png" alt="shopping bag"></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="mobile-nav">
+        <div class="mobile-nav__bar">
+          <img src="../assets/icons/wht/close-menu-wht.png" alt="close menu" class="close-menu">
+        </div>
+        <nav class="mobile-nav__menu">
+          <ul class="mobile-nav__items">
+            <li class="mobile-nav__item"><a href="../index.html">Home</a></li>
+            <li class="mobile-nav__item"><a href="all-products.html">Shop</a></li>
+            <li class="mobile-nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    <main>
+      <section class="contact">
+        <section class="contact__info">
+            <h2>Contact Info</h2>
+            <p>888.888.8888</p>
+            <p>info@humil.com</p>
+            <p>1234 Humil Dr,<br>Charlotte, NC 28215</p>
+        </section>
+        <section class="contact__form">
+            <div class="contact__form--items">
+              <label for="name">Name</label>
+              <div class="contact__form--item">
+                <input type="text" id="name" pattern=".+@globex\.com" size="30" placeholder="John Doe" required />
+              </div>
+            </div>
+            <div class="contact__form--items">
+              <label for="phone">Phone Number</label>
+              <div class="contact__form--item">
+                <input type="tel" id="phone" pattern=".+@globex\.com" size="30" placeholder="(888)-888-8888" maxlength="16" required />
+              </div>
+            </div>
+            <div class="contact__form--items">
+              <label for="email">Email</label>
+              <div class="contact__form--item">
+                <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="name@humil.com" required />
+              </div>
+            </div>
+            <div class="contact__form--items">
+              <label for="message">Message</label>
+              <div class="contact__form-item message">
+                <textarea type="freeform" id="message" pattern=".+@globex\.com"  placeholder="Say something..." rows="6" cols="30" required></textarea>
+              </div>
+            </div>
+            <div class="submit-button__container">
+              <input class="submit-button" type="button" value="Submit" />
+            </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="main-footer">
+        <ul class="main-footer__items">
+          <li class="main-footer__item">
+            <div class="main-footer__link-sections">
+              <ul class="main-footer__links">
+                <h5>Shop</h5>
+                <li class="main-footer__link"><a href="all-products.html">Chairs</a></li>
+                <li class="main-footer__link"><a href="all-products.html">Sofas</a></li>
+                <li class="main-footer__link"><a href="all-products.html">Lighting</a></li>
+              </ul>
+              <ul class="main-footer__links">
+                <h5>Info</h5>
+                <li class="main-footer__link"><a href="">Return Policy</a></li>
+                <li class="main-footer__link">
+                  <a href="">Terms and Conditions</a>
+                </li>
+                <li class="main-footer__link"><a href="">FAQ</a></li>
+              </ul>
+              <ul class="main-footer__links">
+                <h5>About</h5>
+                <li class="main-footer__link"><a href="#">Contact</a></li>
+                <li class="main-footer__link"><a href="">Careers</a></li>
+                <li class="main-footer__link"><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-footer__item subscribe">
+            <label for="email">Subscribe to our newsletter:</label>
+            <div class="email-input">
+              <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="Email" required />
+              <input class="subscribe__submit-btn" type="button" value="Submit" />
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="main-footer__subsection">
+        <li class="main-footer__item">
+          <ul class="main-footer__social-links">
+            <li class="main-footer__social-link">
+              <a href="#"><img src="../assets/icons/blk/big-twitter-logo.png" alt="twitter" /></a>
+            </li>
+            <li class="main-footer__social-link">
+              <a href="#"><img src="../assets/icons/blk/github-logo.png" alt="Github" /></a>
+            </li>
+            <li class="main-footer__social-link">
+              <a href="#"><img src="../assets/icons/blk/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <small class="copyright">© Humil 2023</small>
+      </section>
+      <ul>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

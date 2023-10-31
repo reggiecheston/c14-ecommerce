@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__navbar">
+        <ul class="main-header__navbar--items">
+          <li class="main-header__navbar--item">
+            <div class="hamburger-menu">
+              <span class="hamburger-menu-bar"></span>
+              <span class="hamburger-menu-bar"></span>
+              <span class="hamburger-menu-bar"></span>
+            </div>
+          </li>
+          <li class="main-header__navbar--item">
+            <h1 class="main-header__logo"><a href="">humil</a></h1>
+          </li>
+          <li class="main-header__navbar--item"><img class="shopping-bag" src="assets/icons/blk/shopping-bag.png" alt="shopping bag"></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="mobile-nav">
+      <div class="mobile-nav__bar">
+        <img src="assets/icons/wht/close-menu-wht.png" alt="close menu" class="close-menu">
+      </div>
+      <nav class="mobile-nav__menu">
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item"><a href="#">Home</a></li>
+          <li class="mobile-nav__item"><a href="pages/all-products.html">Shop</a></li>
+          <li class="mobile-nav__item"><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <main>
+      <section class="hero-section">
+        <div class="hero-section__text">
+          <h2 class="hero-section__header"></h2>
+          <p class="hero-section__copy"></p>
+        </div>
+        <img
+          class="hero-section__image"
+          src="assets/images/GUBI-Pacha-Pierre-Paulin-1.jpg"
+          alt="Pacha Chairs"
+        />
+      </section>
+      <section class="special-collection">
+        <h2 class="special-collection__header">shop our special collection</h2>
+        <div class="special-collection__products">
+          <ul class="special-collection__product">
+            <li class="special-collection__product-box">
+              <img src="" alt="" class="special-collection__product--img" />
+              <div class="special-collection__product--copy">
+                <h3 class="special-collection__product--name"></h3>
+                <p class="special-collection__product--price"></p>
+              </div>
+            </li>
+            <li class="special-collection__product-box">
+              <img src="" alt="" class="special-collection__product--img" />
+              <div class="special-collection__product--copy">
+                <h3 class="special-collection__product--name"></h3>
+                <p class="special-collection__product--price"></p>
+              </div>
+            </li>
+            <li class="special-collection__product-box">
+              <img src="" alt="" class="special-collection__product--img" />
+              <div class="special-collection__product--copy">
+                <h3 class="special-collection__product--name"></h3>
+                <p class="special-collection__product--price"></p>
+              </div>
+            </li>
+            <li class="special-collection__product-box">
+              <img src="" alt="" class="special-collection__product--img" />
+              <div class="special-collection__product--copy">
+                <h3 class="special-collection__product--name"></h3>
+                <p class="special-collection__product--price"></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="blog-section">
+        <h2 class="blog-section__header">humil newsletter</h2>
+        <div class="blog-section__blogs">
+          <ul class="blog-section__blog">
+            <li class="blog-section__blog-box">
+              <img src="" alt="" class="blog-section__blog--img" />
+              <h3 class="blog-section__blog--title"></h3>
+              <p class="blog-section__blog--copy"></p>
+              <a href="" class="blog-section__blog--link"></a>
+            </li>
+            <li class="blog-section__blog-box">
+              <img src="" alt="" class="blog-section__blog--img" />
+              <h3 class="blog-section__blog--title"></h3>
+              <p class="blog-section__blog--copy"></p>
+              <a href="" class="blog-section__blog--link"></a>
+            </li>
+            <li class="blog-section__blog-box">
+              <img src="" alt="" class="blog-section__blog--img" />
+              <h3 class="blog-section__blog--title"></h3>
+              <p class="blog-section__blog--copy"></p>
+              <a href="" class="blog-section__blog--link"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="main-footer">
+        <ul class="main-footer__items">
+          <li class="main-footer__item">
+            <div class="main-footer__link-sections">
+              <ul class="main-footer__links">
+                <h5>Shop</h5>
+                <li class="main-footer__link"><a href="pages/all-products.html">Chairs</a></li>
+                <li class="main-footer__link"><a href="pages/all-products.html">Sofas</a></li>
+                <li class="main-footer__link"><a href="pages/all-products.html">Lighting</a></li>
+              </ul>
+              <ul class="main-footer__links">
+                <h5>Info</h5>
+                <li class="main-footer__link"><a href="">Return Policy</a></li>
+                <li class="main-footer__link">
+                  <a href="">Terms and Conditions</a>
+                </li>
+                <li class="main-footer__link"><a href="">FAQ</a></li>
+              </ul>
+              <ul class="main-footer__links">
+                <h5>About</h5>
+                <li class="main-footer__link"><a href="pages/contact.html">Contact</a></li>
+                <li class="main-footer__link"><a href="">Careers</a></li>
+                <li class="main-footer__link"><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-footer__item subscribe">
+            <label for="email">Subscribe to our newsletter:</label>
+            <div class="email-input">
+              <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="Email" required />
+              <input class="subscribe__submit-btn" type="button" value="Submit" />
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="main-footer__subsection">
+        <li class="main-footer__item">
+          <ul class="main-footer__social-links">
+            <li class="main-footer__social-link">
+              <a href="#"><img src="assets/icons/blk/big-twitter-logo.png" alt="twitter" /></a>
+            </li>
+            <li class="main-footer__social-link">
+              <a href="#"><img src="assets/icons/blk/github-logo.png" alt="Github" /></a>
+            </li>
+            <li class="main-footer__social-link">
+              <a href="#"><img src="assets/icons/blk/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <small class="copyright">© Humil 2023</small>
+      </section>
+      <ul>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

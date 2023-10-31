@@ -1,0 +1,10 @@
+.hero-section {
+  display: flex;
+  height: calc(100vh - 4.25rem);
+}
+
+.hero-section__image {
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
