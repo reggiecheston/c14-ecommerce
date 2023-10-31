@@ -1,3 +1,5 @@
+"use strict";
+
 let hamburgerMenu = document.querySelector(".hamburger-menu");
 let closeMenu = document.querySelector(".close-menu");
 let mobileNav = document.querySelector(".mobile-nav");
