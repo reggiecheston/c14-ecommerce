@@ -36,7 +36,7 @@ main {
 }
 
 .contact__form--items {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .contact__form--items:nth-child(1) {
@@ -76,9 +76,24 @@ main {
   background-color: black;
 }
 
+/* validation */
+.contact__form--items .success input {
+  border-color: #09c372;
+}
+
+.contact__form--items .error input {
+  border-color: #ff3860;
+}
+
+.contact__form--items .error {
+  color: #ff3860;
+  font-size: 0.75rem;
+  height: 1rem;
+}
+
 @media (min-width: 769px) {
   main {
-    min-height: calc(100vh - 3.75rem);
+    min-height: calc(100vh - 5.75rem);
   }
 
   .contact {

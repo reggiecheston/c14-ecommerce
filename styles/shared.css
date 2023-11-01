@@ -169,8 +169,16 @@ footer {
 .subscribe {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+}
+
+.subscribe__header {
+  text-align: center;
+}
+
+.subscribe__header h5 {
+  font-size: 1rem;
 }
 
 .email-input {

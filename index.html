@@ -157,11 +157,14 @@
             </div>
           </li>
           <li class="main-footer__item subscribe">
-            <label for="email">Subscribe to our newsletter:</label>
+            <form action="/">
+              <label class="subscribe__header" for="email"><h5>Subscribe to our newsletter:</h5></label>
             <div class="email-input">
-              <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="Email" required />
-              <input class="subscribe__submit-btn" type="button" value="Submit" />
+              <input type="text" id="email" size="30" placeholder="name@humil.com" required>
+              <button class="subscribe__submit-btn" type="submit">Submit</button>
             </div>
+            <div class="error"></div>
+            </form>
           </li>
         </ul>
       </section>
