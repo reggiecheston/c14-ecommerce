@@ -66,11 +66,12 @@ main {
 
 #message {
   padding: 0.25rem;
+  resize: none;
 }
 
 .submit-button {
   padding: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: white;
   background-color: black;
 }
@@ -100,7 +101,8 @@ main {
     width: 15rem;
   }
 
-  .contact__info > p {
+  .contact__info > p,
+  .contact__info > h2 {
     margin-top: 1rem;
     width: 9.25rem;
   }
