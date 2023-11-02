@@ -1,12 +1,31 @@
 .hero-section {
   display: flex;
   height: calc(100vh - 5.75rem);
+  align-items: end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.75)),
+    url(../assets/images/GUBI-Pacha-Pierre-Paulin-1.jpg);
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-section__image {
   object-fit: cover;
   width: 100%;
   position: relative;
+}
+
+.hero-section__text {
+  margin: 3rem;
+  color: white;
+}
+
+.hero-section__text--header {
+  font-size: 2rem;
+}
+
+.hero-section__text--copy {
+  margin-top: 0.5rem;
 }
 
 .featured {
@@ -57,10 +76,26 @@
   .featured-container__flex--items {
     flex-direction: row;
   }
+
+  .hero-section__text--header {
+    font-size: 2.5rem;
+  }
+
+  .hero-section__text {
+    margin: 6rem;
+  }
 }
 
 @media (min-width: 1441px) {
   .featured-container {
     flex-direction: row;
+  }
+
+  .hero-section__text--header {
+    font-size: 3.5rem;
+  }
+
+  .hero-section__text {
+    margin: 10rem;
   }
 }

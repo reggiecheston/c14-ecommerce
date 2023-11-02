@@ -10,7 +10,7 @@
 
 .main-header__navbar {
   background-color: white;
-  border-bottom: black 0.05rem solid;
+  /* border-bottom: black 0.05rem solid; */
 }
 
 .main-header__navbar--items {
@@ -148,8 +148,9 @@ footer {
   margin: 5rem 1rem 3rem 1rem;
 }
 
-.main-footer__links h5 {
+.main-footer__link--header {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .main-footer__link {
@@ -174,19 +175,15 @@ footer {
 }
 
 .subscribe__header {
-  text-align: center;
-}
-
-.subscribe__header h5 {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .email-input {
-  border-bottom: black 0.005px solid;
   margin-top: 2rem;
 }
 
-#email {
+#footer-email {
   height: 1.5rem;
   background-color: transparent;
   padding: 0 0 0.25rem 0.25rem;
@@ -228,6 +225,36 @@ textarea:focus {
   width: 1rem;
   height: auto;
   margin: 3rem 1rem;
+}
+
+.contact__form--item {
+  height: 100%;
+  margin-top: 0.25rem;
+}
+.contact__form--item .success input {
+  border-color: #09c372;
+}
+
+#footer-email {
+  height: 1.5rem;
+  background-color: transparent;
+  padding: 0 0 0.25rem 0.25rem;
+  border-bottom: black 0.005px solid;
+}
+
+/* validation */
+.success input {
+  border-color: #09c372;
+}
+
+.error input {
+  border-color: #ff3860;
+}
+
+.error {
+  color: #ff3860;
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
 }
 
 .copyright {

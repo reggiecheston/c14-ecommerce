@@ -21,63 +21,89 @@
           <li class="main-header__navbar--item">
             <h1 class="main-header__logo"><a href="../index.html">humil</a></h1>
           </li>
-          <li class="main-header__navbar--item"><img class="shopping-bag" src="../assets/icons/blk/shopping-bag.png" alt="shopping bag"></li>
+          <li class="main-header__navbar--item">
+            <img
+              class="shopping-bag"
+              src="../assets/icons/blk/shopping-bag.png"
+              alt="shopping bag"
+            />
+          </li>
         </ul>
       </nav>
     </header>
     <section class="mobile-nav">
-        <div class="mobile-nav__bar">
-          <img src="../assets/icons/wht/close-menu-wht.png" alt="close menu" class="close-menu">
-        </div>
-        <nav class="mobile-nav__menu">
-          <ul class="mobile-nav__items">
-            <li class="mobile-nav__item"><a href="../index.html">Home</a></li>
-            <li class="mobile-nav__item"><a href="all-products.html">Shop</a></li>
-            <li class="mobile-nav__item"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
+      <div class="mobile-nav__bar">
+        <img
+          src="../assets/icons/wht/close-menu-wht.png"
+          alt="close menu"
+          class="close-menu"
+        />
+      </div>
+      <nav class="mobile-nav__menu">
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item"><a href="../index.html">Home</a></li>
+          <li class="mobile-nav__item"><a href="all-products.html">Shop</a></li>
+          <li class="mobile-nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
     <main>
       <section class="contact">
         <section class="contact__info">
-            <h2>Contact Info</h2>
-            <p>888.888.8888</p>
-            <p>info@humil.com</p>
-            <p>1234 Humil Dr,<br>Charlotte, NC 28215</p>
+          <h2>Contact Info</h2>
+          <p>888.888.8888</p>
+          <p>info@humil.com</p>
+          <p>1234 Humil Dr,<br />Charlotte, NC 28215</p>
         </section>
         <form class="contact__form" id="form" action="/">
-            <div class="contact__form--items">
-              <label for="name">Name</label>
-              <div class="contact__form--item">
-                <input type="text" id="name" size="30" placeholder="John Doe" required>
-              </div>
+          <div class="contact__form--items contact__form--padding">
+            <label for="name">Name</label>
+            <div class="contact__form--item">
+              <input type="text" id="name" size="30" placeholder="John Doe" />
               <div class="error"></div>
             </div>
-            <div class="contact__form--items">
-              <label for="phone">Phone Number</label>
-              <div class="contact__form--item">
-                <input type="tel" id="phone" size="30" placeholder="(888)-888-8888" maxlength="16" required>
-              </div>
+          </div>
+          <div class="contact__form--items contact__form--padding">
+            <label for="phone">Phone Number</label>
+            <div class="contact__form--item">
+              <input
+                type="tel"
+                id="phone"
+                size="30"
+                placeholder="(888)-888-8888"
+                maxlength="16"
+              />
               <div class="error"></div>
             </div>
-            <div class="contact__form--items">
-              <label for="email">Email</label>
-              <div class="contact__form--item">
-                <input type="text" id="email" size="30" placeholder="name@humil.com" required>
-              </div>
+          </div>
+          <div class="contact__form--items contact__form--padding">
+            <label for="email">Email</label>
+            <div class="contact__form--item">
+              <input
+                type="text"
+                id="email"
+                size="30"
+                placeholder="name@humil.com"
+              />
               <div class="error"></div>
             </div>
-            <div class="contact__form--items">
-              <label for="message">Message</label>
-              <div class="contact__form-item message">
-                <textarea type="freeform" id="message" placeholder="Say something..." rows="6" cols="30" required></textarea>
-              </div>
+          </div>
+          <div class="contact__form--items contact__form--padding">
+            <label for="message">Message</label>
+            <div class="contact__form-item message">
+              <textarea
+                id="message"
+                placeholder="Say something..."
+                rows="6"
+                cols="30"
+              ></textarea>
               <div class="error"></div>
             </div>
-            <div class="submit-button__container">
-              <button class="submit-button" type="submit">Submit</button>
-            </div>
-          </form>
+          </div>
+          <div class="submit-button__container">
+            <button class="submit-button" type="submit">Submit</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer>
@@ -86,13 +112,19 @@
           <li class="main-footer__item">
             <div class="main-footer__link-sections">
               <ul class="main-footer__links">
-                <h5>Shop</h5>
-                <li class="main-footer__link"><a href="all-products.html">Chairs</a></li>
-                <li class="main-footer__link"><a href="all-products.html">Sofas</a></li>
-                <li class="main-footer__link"><a href="all-products.html">Lighting</a></li>
+                <li class="main-footer__link--header">Shop</li>
+                <li class="main-footer__link">
+                  <a href="all-products.html">Chairs</a>
+                </li>
+                <li class="main-footer__link">
+                  <a href="all-products.html">Sofas</a>
+                </li>
+                <li class="main-footer__link">
+                  <a href="all-products.html">Lighting</a>
+                </li>
               </ul>
               <ul class="main-footer__links">
-                <h5>Info</h5>
+                <li class="main-footer__link--header">Info</li>
                 <li class="main-footer__link"><a href="">Return Policy</a></li>
                 <li class="main-footer__link">
                   <a href="">Terms and Conditions</a>
@@ -100,44 +132,68 @@
                 <li class="main-footer__link"><a href="">FAQ</a></li>
               </ul>
               <ul class="main-footer__links">
-                <h5>About</h5>
-                <li class="main-footer__link"><a href="#">Contact</a></li>
+                <li class="main-footer__link--header">About</li>
+                <li class="main-footer__link">
+                  <a href="#">Contact</a>
+                </li>
                 <li class="main-footer__link"><a href="">Careers</a></li>
                 <li class="main-footer__link"><a href="">Privacy Policy</a></li>
               </ul>
             </div>
           </li>
           <li class="main-footer__item subscribe">
-            <form action="/">
-              <label class="subscribe__header" for="email"><h5>Subscribe to our newsletter:</h5></label>
-            <div class="email-input">
-              <input type="text" id="email" size="30" placeholder="name@humil.com" required>
-              <button class="subscribe__submit-btn" type="submit">Submit</button>
-            </div>
-            <div class="error"></div>
+            <form id="subscribe" action="/">
+              <label class="subscribe__header" for="footer-email"
+                >Subscribe to our newsletter:</label
+              >
+              <div class="email-input">
+                <input
+                  type="text"
+                  class="contact__form-item"
+                  id="footer-email"
+                  size="30"
+                  placeholder="name@humil.com"
+                />
+                <button class="subscribe__submit-btn" type="submit">
+                  Submit
+                </button>
+                <div class="error"></div>
+              </div>
             </form>
           </li>
         </ul>
       </section>
       <section class="main-footer__subsection">
-        <li class="main-footer__item">
+        <div class="main-footer__item">
           <ul class="main-footer__social-links">
             <li class="main-footer__social-link">
-              <a href="#"><img src="../assets/icons/blk/big-twitter-logo.png" alt="twitter" /></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><img
+                  src="../assets/icons/blk/big-twitter-logo.png"
+                  alt="twitter"
+              /></a>
             </li>
             <li class="main-footer__social-link">
-              <a href="https://github.com/reggiecheston/c14-ecommerce" target="_blank"><img src="../assets/icons/blk/github-logo.png" alt="Github" /></a>
+              <a
+                href="https://github.com/reggiecheston/c14-ecommerce"
+                target="_blank"
+                ><img src="../assets/icons/blk/github-logo.png" alt="Github"
+              /></a>
             </li>
             <li class="main-footer__social-link">
-              <a href="#"><img src="../assets/icons/blk/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="Instagram" /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="../assets/icons/blk/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png"
+                  alt="Instagram"
+              /></a>
             </li>
           </ul>
-        </li>
-      </ul>
-      <small class="copyright">© Humil 2023</small>
+        </div>
+        <small class="copyright">© Humil 2023</small>
       </section>
-      <ul>
     </footer>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <script src="../scripts/subscribe.js"></script>
   </body>
 </html>

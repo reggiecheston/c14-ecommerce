@@ -2,7 +2,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/images/a436fc8c-d905-4093-b75e-f5051ca82f73-1920.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.75)),
+    url(../assets/images/a436fc8c-d905-4093-b75e-f5051ca82f73-1920.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -35,7 +36,7 @@ main {
   margin-bottom: 3.75rem;
 }
 
-.contact__form--items {
+.contact__form--padding {
   margin-top: 1rem;
 }
 
@@ -45,7 +46,6 @@ main {
 
 .contact__form--item {
   height: 100%;
-  border-bottom: black 0.005px solid;
   margin-top: 0.25rem;
 }
 
@@ -55,18 +55,21 @@ main {
   height: 1.5rem;
   background-color: transparent;
   padding: 0 0 0.25rem 0.25rem;
+  border-bottom: black 0.005px solid;
 }
 
 .message {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: black 0.05rem solid;
+  align-items: start;
+  flex-direction: column;
 }
 
 #message {
   padding: 0.25rem;
   resize: none;
+  border: black 0.05rem solid;
+  width: 100%;
 }
 
 .submit-button {
@@ -74,21 +77,6 @@ main {
   margin-top: 1rem;
   color: white;
   background-color: black;
-}
-
-/* validation */
-.contact__form--items .success input {
-  border-color: #09c372;
-}
-
-.contact__form--items .error input {
-  border-color: #ff3860;
-}
-
-.contact__form--items .error {
-  color: #ff3860;
-  font-size: 0.75rem;
-  height: 1rem;
 }
 
 @media (min-width: 769px) {
