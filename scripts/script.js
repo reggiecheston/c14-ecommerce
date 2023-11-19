@@ -3,7 +3,7 @@
 // menu variables
 let hamburgerMenu = document.querySelector(".hamburger-menu");
 let closeMenu = document.querySelector(".close-menu");
-let mobileNav = document.querySelector(".mobile-nav");
+let hamburgerNav = document.querySelector(".hamburger-nav");
 
 // disables scrolling
 function noscroll() {
@@ -11,11 +11,11 @@ function noscroll() {
 }
 
 hamburgerMenu.addEventListener("click", function () {
-  mobileNav.classList.add("open");
+  hamburgerNav.classList.add("open");
   window.addEventListener("scroll", noscroll);
 });
 
 closeMenu.addEventListener("click", function () {
-  mobileNav.classList.remove("open");
+  hamburgerNav.classList.remove("open");
   window.removeEventListener("scroll", noscroll);
 });

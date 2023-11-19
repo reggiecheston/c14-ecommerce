@@ -3,29 +3,8 @@
 const footerEmail = document.getElementById("footer-email");
 const subscribe = document.getElementById("subscribe");
 
-// footer form validation (subscribe)
-subscribe.addEventListener("submit", (e) => {
-  console.log("Submission");
-  e.preventDefault();
-  validateFooterInput();
-  console.log("button works");
-});
-
-// function evaluating the validation
-const validateFooterInput = () => {
-  const footerEmailValue = footerEmail.value;
-
-  if (footerEmailValue === "") {
-    errorMessage(footerEmail, "Email is required");
-  } else if (!isValidFooterEmail(footerEmailValue)) {
-    errorMessage(footerEmail, "Provide a valid email address");
-  } else {
-    setSuccess(footerEmail, "Success");
-  }
-};
-
 // toggles classes when input is invalid
-const errorMessage = (element, message) => {
+const errorMessageFooter = (element, message) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector(".error");
 
@@ -35,7 +14,7 @@ const errorMessage = (element, message) => {
 };
 
 // toggles classes when input is valid
-const setSuccess = (element) => {
+const setSuccessFooter = (element) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector(".error");
 
@@ -50,3 +29,22 @@ const isValidFooterEmail = (footerEmail) => {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(footerEmail).toLowerCase());
 };
+
+// function evaluating the validation
+const validateFooterInput = () => {
+  const footerEmailValue = footerEmail.value;
+
+  if (footerEmailValue === "") {
+    errorMessageFooter(footerEmail, "Email is required");
+  } else if (!isValidFooterEmail(footerEmailValue)) {
+    errorMessageFooter(footerEmail, "Provide a valid email address");
+  } else {
+    setSuccessFooter(footerEmail, "Success");
+  }
+};
+
+// footer form validation (subscribe)
+subscribe.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validateFooterInput();
+});
